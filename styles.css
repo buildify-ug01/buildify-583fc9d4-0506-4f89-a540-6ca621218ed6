@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 85%;
+  margin: 0 auto 1rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+}
+
+ul, ol {
+  font-size: 1.6rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+li {
+  margin-bottom: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+ul li::marker {
+  content: "→ ";
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.two-column {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  text-align: left;
+}
+
+.column h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  background: rgba(255, 215, 0, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+}
+
+.metric {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffd700;
+  margin: 1rem 0;
+}
+
+.small-text {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.quote {
+  font-size: 2.2rem;
+  font-style: italic;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-left: 4px solid #ffd700;
+  text-align: left;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  text-align: right;
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.card p {
+  font-size: 1.3rem;
+  text-align: left;
+}

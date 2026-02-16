@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: #ffffff;
+  font-family: 'Georgia', 'Courier New', serif;
+  background: linear-gradient(180deg, #d4a574 0%, #8b6f47 50%, #5c4a3a 100%);
+  color: #2a1810;
   line-height: 1.6;
   position: relative;
   overflow: hidden;
@@ -21,22 +21,13 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, white, transparent),
-    radial-gradient(2px 2px at 60px 70px, white, transparent),
-    radial-gradient(1px 1px at 50px 50px, white, transparent),
-    radial-gradient(1px 1px at 130px 80px, white, transparent),
-    radial-gradient(2px 2px at 90px 10px, white, transparent);
-  background-size: 200px 200px;
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="40" opacity="0.1">🤠</text></svg>'),
+    repeating-linear-gradient(90deg, rgba(139, 111, 71, 0.1) 0px, transparent 2px, transparent 50px);
+  background-size: 100px 100px, 50px 50px;
   background-repeat: repeat;
-  opacity: 0.4;
-  animation: twinkle 3s infinite;
+  opacity: 0.3;
   pointer-events: none;
   z-index: 0;
-}
-
-@keyframes twinkle {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.7; }
 }
 
 .slide {
@@ -56,14 +47,14 @@ h1 {
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
-  text-shadow: 0 0 20px rgba(100, 200, 255, 0.8), 0 0 40px rgba(100, 200, 255, 0.4);
-  background: linear-gradient(to right, #64c8ff, #a78bfa, #64c8ff);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
+  letter-spacing: 0.05em;
+  text-shadow: 3px 3px 0px rgba(139, 69, 19, 0.5), 5px 5px 10px rgba(0, 0, 0, 0.3);
+  color: #8b4513;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  border-bottom: 4px solid #8b4513;
+  padding-bottom: 0.5rem;
+  display: inline-block;
 }
 
 @keyframes shimmer {
@@ -74,17 +65,19 @@ h2 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  letter-spacing: -0.01em;
-  text-shadow: 0 0 15px rgba(100, 200, 255, 0.6);
-  color: #64c8ff;
+  letter-spacing: 0.03em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #8b4513;
+  font-family: 'Georgia', serif;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #a78bfa;
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  color: #a0522d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Georgia', serif;
 }
 
 p {
@@ -92,13 +85,16 @@ p {
   line-height: 1.8;
   max-width: 85%;
   margin: 0 auto 1rem;
+  color: #2a1810;
 }
 
 .subtitle {
   font-size: 2rem;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 0.85;
   margin-bottom: 3rem;
+  color: #5c4a3a;
+  font-style: italic;
 }
 
 ul, ol {
@@ -106,16 +102,18 @@ ul, ol {
   text-align: left;
   max-width: 900px;
   margin: 2rem auto;
+  color: #2a1810;
 }
 
 li {
   margin-bottom: 1.2rem;
   padding-left: 0.5rem;
+  color: #2a1810;
 }
 
 ul li::marker {
   content: "★ ";
-  color: #64c8ff;
+  color: #d4af37;
   font-weight: bold;
 }
 
@@ -139,35 +137,39 @@ ul li::marker {
 }
 
 .highlight {
-  background: rgba(100, 200, 255, 0.2);
+  background: rgba(212, 175, 55, 0.3);
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   font-weight: 600;
-  box-shadow: 0 0 10px rgba(100, 200, 255, 0.3);
+  border: 1px solid #d4af37;
+  color: #2a1810;
 }
 
 .box {
-  background: rgba(20, 30, 50, 0.6);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(100, 200, 255, 0.3);
-  border-radius: 12px;
+  background: rgba(222, 184, 135, 0.8);
+  backdrop-filter: blur(5px);
+  border: 3px solid #8b4513;
+  border-radius: 8px;
   padding: 2rem;
   margin: 1rem auto;
   max-width: 900px;
-  box-shadow: 0 0 20px rgba(100, 200, 255, 0.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  color: #2a1810;
 }
 
 .metric {
   font-size: 3.5rem;
   font-weight: 800;
-  color: #64c8ff;
+  color: #8b4513;
   margin: 1rem 0;
-  text-shadow: 0 0 20px rgba(100, 200, 255, 0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
 }
 
 .small-text {
   font-size: 1.2rem;
-  opacity: 0.8;
+  opacity: 0.75;
+  color: #5c4a3a;
 }
 
 .footer {
@@ -183,9 +185,10 @@ ul li::marker {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  border-left: 4px solid #64c8ff;
+  border-left: 6px solid #8b4513;
   text-align: left;
-  box-shadow: 0 0 15px rgba(100, 200, 255, 0.2);
+  background: rgba(222, 184, 135, 0.5);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .attribution {
@@ -204,12 +207,13 @@ ul li::marker {
 }
 
 .card {
-  background: rgba(20, 30, 50, 0.5);
+  background: rgba(222, 184, 135, 0.7);
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: left;
-  border: 1px solid rgba(100, 200, 255, 0.2);
-  box-shadow: 0 0 15px rgba(100, 200, 255, 0.15);
+  border: 3px solid #8b4513;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  color: #2a1810;
 }
 
 .card h3 {
